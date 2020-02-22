@@ -19,7 +19,7 @@ steps
   {
 withMaven(jdk:'java_local', maven:'local_maven')
 	{
-		sh 'mvn clean package'
+		sh 'mvn clean package sonar:sonar'
 	}
 }}
 }
